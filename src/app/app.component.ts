@@ -1,13 +1,43 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, RouterLink],
+  template: `
+    <div class="pageWrapper">
+      <header class="banner">
+        SHELDON SKAGGS
+      </header>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="https://angular.dev/guide/forms" target="_blank">Forms in Angular<sup>&#8663;</sup></a></li>
+          <li><a href="https://angular.dev/guide/forms/reactive-forms" target="_blank">Reactive Forms<sup>&#8663;</sup></a></li>
+          <li><a href="https://angular.dev/guide/forms/form-validation" target="_blank">Validating Form Input<sup>&#8663;</sup></a></li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        <section class="content">
+          <router-outlet />
+        </section>
+      </main>
+
+      <footer class="footer">
+        <nav class="footerNav">
+          <ul>
+          <li><a href="https://angular.dev/guide/forms" target="_blank">Forms in Angular<sup>&#8663;</sup></a></li>
+          <li><a href="https://angular.dev/guide/forms/reactive-forms" target="_blank">Reactive Forms<sup>&#8663;</sup></a></li>
+          <li><a href="https://angular.dev/guide/forms/form-validation" target="_blank">Validating Form Input<sup>&#8663;</sup></a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  `,
+  styles: ``
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Sheldon\' Portfolio';
 }

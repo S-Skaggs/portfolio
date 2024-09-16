@@ -9,13 +9,17 @@ import { RouterOutlet, RouterLink } from '@angular/router';
     <div class="pageWrapper">
       <header class="banner">
         SHELDON SKAGGS
+        <a routerLink="/home"><img src="/assets/SheldonS_logo.jpg" alt="image of two letter S at an angle" class="banner-logo" /></a>
       </header>
 
       <nav class="navbar">
         <ul>
-          <li><a href="https://angular.dev/guide/forms" target="_blank">Forms in Angular<sup>&#8663;</sup></a></li>
-          <li><a href="https://angular.dev/guide/forms/reactive-forms" target="_blank">Reactive Forms<sup>&#8663;</sup></a></li>
-          <li><a href="https://angular.dev/guide/forms/form-validation" target="_blank">Validating Form Input<sup>&#8663;</sup></a></li>
+          <li><a routerLink="/home">Home</a></li>
+          <li><a routerLink="/projects">Projects</a></li>
+          <li><a routerLink="/resume">Resume</a></li>
+          <li><a routerLink="/military">Military</a></li>
+          <li><a routerLink="/personal">Personal</a></li>
+          <li><a routerLink="/about">About</a></li>
         </ul>
       </nav>
 
@@ -28,11 +32,17 @@ import { RouterOutlet, RouterLink } from '@angular/router';
       <footer class="footer">
         <nav class="footerNav">
           <ul>
-          <li><a href="https://angular.dev/guide/forms" target="_blank">Forms in Angular<sup>&#8663;</sup></a></li>
-          <li><a href="https://angular.dev/guide/forms/reactive-forms" target="_blank">Reactive Forms<sup>&#8663;</sup></a></li>
-          <li><a href="https://angular.dev/guide/forms/form-validation" target="_blank">Validating Form Input<sup>&#8663;</sup></a></li>
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/projects">Projects</a></li>
+            <li><a routerLink="/resume">Resume</a></li>
+            <li><a routerLink="/military">Military</a></li>
+            <li><a routerLink="/personal">Personal</a></li>
+            <li><a routerLink="/about">About</a></li>
           </ul>
         </nav>
+        <small>
+          &copy;Sheldon Skaggs 2024
+        </small>
       </footer>
     </div>
   `,

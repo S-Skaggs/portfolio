@@ -10,11 +10,13 @@
 
 /*
     color palette notes
-    dark background: #4e1a3d
-    turquoise: #05e0e9
-    page background: #f0f8ff
-    dark turquoise #00ced1
-    normal text should be black on the light background
+    dark background:    #4e1a3d (ie Banner)
+    medium background:  #5e1f49 (ie navbar)
+    light background:   #6e1f49 (ie footer)
+    turquoise:          #05e0e9 (for links)
+    page background:    #f0f8ff (aliceblue)
+    dark turquoise:     #00ced1v(ie Banner text)
+    normal text should be black on the page background
 */
 body, header, nav, main, section, footer, img, figure, figcaption, div, ol, ul {
     margin: 0;
@@ -59,9 +61,12 @@ body, header, nav, main, section, footer, img, figure, figcaption, div, ol, ul {
     font-size: 2.5rem;
   }
 
-  .banner-img {
-    max-width: 100%;
-    height: auto;
+  .banner-logo {
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    width: auto;
+    max-height: 40px;
   }
 
   .main-content {
@@ -77,7 +82,7 @@ body, header, nav, main, section, footer, img, figure, figcaption, div, ol, ul {
 
   .navbar {
     background-color: #5e1f49;
-    border-bottom: solid darkgrey 3px;
+    border-bottom: solid #a9a9a9 3px;
     width: 100%;
   }
 
@@ -119,7 +124,8 @@ body, header, nav, main, section, footer, img, figure, figcaption, div, ol, ul {
 
   .footer {
     background-color: #6e1f49;
-    border-top: solid darkgrey 3px;
+    border-top: solid #a9a9a9 3px;
+    color: #f0f8ff;
     text-align: center;
     font-size: .8rem;
     font-family: "DM Mono", monospace;

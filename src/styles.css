@@ -19,143 +19,146 @@
     normal text should be black on the page background
 */
 body, header, nav, main, section, footer, img, figure, figcaption, div, ol, ul {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
-  html {
-    font-size: 100%;
-  }
+html {
+  font-size: 100%;
+}
 
-  body {
-    height: 100%;
-    font-family: "Sarabun", Verdana, Helvetica, sans-serif;
-  }
+body {
+  height: 100%;
+  font-family: "Sarabun", Verdana, Helvetica, sans-serif;
+}
 
-  h1 {
-    font-family: "Macondo", cursive, fantasy;
-  }
+h1 {
+  font-family: "Macondo", cursive, fantasy;
+}
 
-  h2, h3, h4, h5, h6 {
-    font-family: "Crimson Text", Georgia, serif;
-  }
+h2, h3, h4, h5, h6 {
+  font-family: "Crimson Text", Georgia, serif;
+}
 
-  .pageWrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0 auto;
-    width: 75%;
-    background-color: #f0f8ff;
-    color: #000000;
-    font-family: "Sarabun", Verdana, Helvetica, sans-serif;
-    font-size: 1rem;
-  }
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 75%;
+  background-color: #f0f8ff;
+  color: #000000;
+  font-family: "Sarabun", Verdana, Helvetica, sans-serif;
+  font-size: 1rem;
+}
 
-  .banner {
-    background-color: #4e1a3d;
-    color: #00ced1;
-    text-align: center;
-    font-family: "Macondo", cursive, fantasy;
-    font-size: 2.5rem;
-  }
+.banner {
+  background-color: #4e1a3d;
+  color: #00ced1;
+  text-align: center;
+  font-family: "Macondo", cursive, fantasy;
+  font-size: 2.5rem;
+}
 
-  .banner-logo {
-    float: right;
-    padding: 5px;
-    border-radius: 10px;
-    width: auto;
-    max-height: 40px;
-  }
+.banner-logo {
+  float: right;
+  padding: 5px;
+  border-radius: 10px;
+  width: auto;
+  max-height: 40px;
+}
 
-  .main-content {
-    display: flex;
-    flex: 1;
-  }
+.main-content {
+  display: flex;
+  flex: 1;
+}
 
-  .content {
-    flex: 1;
-    padding: 20px;
-    font-family: "Sarabun", Verdana, Helvetica, sans-serif;
-  }
+.content {
+  flex: 1;
+  padding: 20px;
+  font-family: "Sarabun", Verdana, Helvetica, sans-serif;
+}
 
-  .navbar {
-    background-color: #5e1f49;
-    border-bottom: solid #a9a9a9 3px;
-    width: 100%;
-  }
+/* Navigation styles */
+.navbar {
+  background-color: #5e1f49;
+  border-bottom: solid #a9a9a9 3px;
+  width: 100%;
+}
 
-  .navbar ul {
-    padding: 8px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+.navbar ul {
+  padding: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .navbar li {
-    padding: 8px;
-    float: left;
-    color: #05e0e9;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+.navbar li {
+  padding: 8px;
+  float: left;
+  color: #05e0e9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  .navbar li:hover {
-    background-color: #05e0e9;
-    color: #5e1f49;
-    cursor: pointer;
-  }
+.navbar li:hover {
+  background-color: #05e0e9;
+  color: #5e1f49;
+  cursor: pointer;
+}
 
-  .navbar li a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
-  .pageHeader {
-    text-align: center;
-    font-size: 2rem;
-  }
+/* Page content styles */
+.pageHeader {
+  text-align: center;
+  font-size: 2rem;
+}
 
-  p.dropCap:first-letter {
-    font-family: "Macondo", cursive, fantasy;
-    font-size: 1.5rem;
-  }
+p.dropCap:first-letter {
+  font-family: "Macondo", cursive, fantasy;
+  font-size: 1.5rem;
+}
 
-  .footer {
-    background-color: #6e1f49;
-    border-top: solid #a9a9a9 3px;
-    color: #f0f8ff;
-    text-align: center;
-    font-size: .8rem;
-    font-family: "DM Mono", monospace;
-    width: 100%;
-  }
+/* Footer styles */
+.footer {
+  background-color: #6e1f49;
+  border-top: solid #a9a9a9 3px;
+  color: #f0f8ff;
+  text-align: center;
+  font-size: .8rem;
+  font-family: "DM Mono", monospace;
+  width: 100%;
+}
 
-  .footerNav {
-    width: 100%;
-  }
+.footerNav {
+  width: 100%;
+}
 
-  .footerNav ul {
-    padding: 8px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+.footerNav ul {
+  padding: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .footerNav li {
-    display: inline-block;
-    color: #05e0e9;
-    padding: 8px;
-  }
+.footerNav li {
+  display: inline-block;
+  color: #05e0e9;
+  padding: 8px;
+}
 
-  .footerNav li a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
+.footerNav li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
-  .footerNav li a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+.footerNav li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

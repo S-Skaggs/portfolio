@@ -28,9 +28,15 @@ html {
   font-size: 100%;
 }
 
+/* Body and page styles */
 body {
   height: 100%;
   font-family: "Sarabun", Verdana, Helvetica, sans-serif;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
 }
 
 h1 {
@@ -39,6 +45,12 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "Crimson Text", Georgia, serif;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
 }
 
 .pageWrapper {
@@ -122,6 +134,12 @@ h2, h3, h4, h5, h6 {
 p.dropCap:first-letter {
   font-family: "Macondo", cursive, fantasy;
   font-size: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
 }
 
 /* Footer styles */

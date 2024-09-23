@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
   `,
   styles: `
     img {
-      border-radius: 0;
+      border-radius: 10px;
       width: 100%;
     }
 
@@ -32,10 +32,23 @@ import { Component } from '@angular/core';
 
     .not-found-text {
       position: absolute;
-      top: 20px;
-      left: 10px;
-      padding: 5px;
+      top: 5px;
+      left: 5px;
+      padding-left: 5px;
       background-color: rgba(121, 112, 118, .5);
+      border-radius: 10px;
+    }
+
+    /* Media query for tablet viewport */
+    @media screen and (min-width: 630px) {
+      .not-found-text {
+        top: 20px;
+        left: 10px;
+      }
+
+      img {
+        border-radius: 0;
+      }
     }
   `
 })

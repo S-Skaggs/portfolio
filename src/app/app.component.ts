@@ -9,7 +9,7 @@ import { RouterOutlet, RouterLink } from '@angular/router';
     <div class="pageWrapper">
       <header class="banner">
         SHELDON SKAGGS
-        <a routerLink="/home"><img src="/assets/SheldonS_logo.jpg" alt="image of two letter S at an angle" class="banner-logo" /></a>
+        <a routerLink="/home" class="logo-link"><img src="/assets/SheldonS_logo.jpg" alt="image of two letter S at an angle" class="banner-logo" /></a>
       </header>
 
       <nav class="navbar">

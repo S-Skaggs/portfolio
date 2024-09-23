@@ -58,13 +58,14 @@ img {
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  width: 75%;
+  width: 100%;
   background-color: #f0f8ff;
   color: #000000;
   font-family: "Sarabun", Verdana, Helvetica, sans-serif;
   font-size: 1rem;
 }
 
+/* Style rules for header, for which I use the banner class */
 .banner {
   background-color: #4e1a3d;
   color: #00ced1;
@@ -81,6 +82,7 @@ img {
   max-height: 40px;
 }
 
+/* Main content styles */
 .main-content {
   display: flex;
   flex: 1;
@@ -96,7 +98,6 @@ img {
 .navbar {
   background-color: #5e1f49;
   border-bottom: solid #a9a9a9 3px;
-  width: 100%;
 }
 
 .navbar ul {
@@ -108,7 +109,8 @@ img {
 
 .navbar li {
   padding: 8px;
-  float: left;
+  float: none;
+  text-align: center;
   color: #05e0e9;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -126,11 +128,6 @@ img {
 }
 
 /* Page content styles */
-.pageHeader {
-  text-align: center;
-  font-size: 2rem;
-}
-
 p.dropCap:first-letter {
   font-family: "Macondo", cursive, fantasy;
   font-size: 1.5rem;
@@ -138,8 +135,7 @@ p.dropCap:first-letter {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
+  grid-template-columns: auto;
 }
 
 /* Footer styles */
@@ -165,7 +161,6 @@ p.dropCap:first-letter {
 }
 
 .footerNav li {
-  display: inline-block;
   color: #05e0e9;
   padding: 8px;
 }
@@ -179,4 +174,57 @@ p.dropCap:first-letter {
 .footerNav li a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* Show mobile and hide tablet-desktop classes */
+.mobile {
+  display: block;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+/* Style rules for header/banner */
+.banner-logo {
+  display: none;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 630px) {
+  /* Hide mobile and show tablet-desktop */
+  .mobile {
+    display: none;
+  }
+
+  .tablet-desktop {
+    display: block;
+  }
+
+  /* Style rules for page */
+  .pageWrapper {
+    width: 75%;
+  }
+
+  /* Style rules for header/banner */
+  .banner-logo {
+    display: inline;
+  }
+
+  /* Navigation style rules */
+  .navbar li {
+    float: left;
+    text-align: unset;
+  }
+
+  /* Footer style rules */
+  .footerNav li {
+    display: inline-block;
+  }
+
+  /* Page content styles */
+  .grid {
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
 }

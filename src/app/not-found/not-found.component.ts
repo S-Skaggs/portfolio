@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <div class="not-found-container">
-      <img src="/pictures/sheldon/thinking.jpg" alt="sheldon looking thoughtfully at the top of Brasstown Bald" />
+      <img src="/pictures/sheldon/thinking_2500.jpg" class="tablet-desktop" alt="sheldon looking thoughtfully at the top of Brasstown Bald" />
+      <img src="/pictures/sheldon/thinking_small.jpg" class="mobile" alt="sheldon looking thoughtfully at the top of Brasstown Bald" />
       <div class="not-found-text">
         <h2>Hmmm...</h2>
         <p>I think you might be lost.</p>
@@ -15,11 +16,6 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: `
-    img {
-      border-radius: 10px;
-      width: 100%;
-    }
-
     h2 {
       text-align: center;
     }
@@ -33,8 +29,8 @@ import { Component } from '@angular/core';
     .not-found-text {
       position: absolute;
       top: 5px;
-      left: 5px;
       padding-left: 5px;
+      padding-right: 5px;
       background-color: rgba(121, 112, 118, .5);
       border-radius: 10px;
     }
@@ -43,11 +39,7 @@ import { Component } from '@angular/core';
     @media screen and (min-width: 630px) {
       .not-found-text {
         top: 20px;
-        left: 10px;
-      }
-
-      img {
-        border-radius: 0;
+        left: 20px;
       }
     }
   `

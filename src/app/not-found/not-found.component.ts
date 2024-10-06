@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <div class="not-found-container">
-      <img src="/pictures/sheldon/thinking_2500.jpg" class="tablet-desktop" alt="sheldon looking thoughtfully at the top of Brasstown Bald" />
-      <img src="/pictures/sheldon/thinking_small.jpg" class="mobile" alt="sheldon looking thoughtfully at the top of Brasstown Bald" />
+      <img src="pictures/sheldon/thinking_2500.jpg" class="tablet-desktop" alt="sheldon looking thoughtfully at the top of Brasstown Bald" />
+      <img src="pictures/sheldon/thinking_small.jpg" class="mobile" alt="sheldon looking thoughtfully at the top of Brasstown Bald" />
       <div class="not-found-text">
         <h2>Hmmm...</h2>
         <p>I think you might be lost.</p>

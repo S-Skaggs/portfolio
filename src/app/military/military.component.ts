@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     <h1>My Military Service</h1>
     <div class="grid">
       <section>
-        <img src="/pictures/sheldon/bootcamp.jpg" alt="a picture of a naval recruit in dress blues" />
+        <img src="pictures/sheldon/bootcamp.jpg" alt="a picture of a naval recruit in dress blues" />
       </section>
       <section>
         <p class="dropCap">I was enlisted in the United States Navy from 1990 to 1996 as a <a href="https://www.navy.com/careers-benefits/careers/science-engineering/machinists-mate-nuclear" target="_blank">Nuclear Machinist Mate</a>.</p>

@@ -5,18 +5,19 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <div class = "page-grid-container">
+    <div class="page-grid-container">
       <section class="resume-section">
         <div class="resume-header center-text">
           <h1>Sheldon Skaggs</h1>
           <h2>Software Engineer IV</h2>
+          <a class="mobile" href="documents/SheldonSResume.pdf" target="_blank">PDF Version</a>
         </div>
         <br />
         <div class="grid">
-          <div class="resume-section-header">
+          <div>
             <h3>Objective</h3>
           </div>
-          <div>
+          <div class="resume-section-details">
             <p>To obtain a challenging developer position in a dynamic and innovative organization where I can utilize my technical and creative skills to develop and maintain responsive, user-friendly, and visually appealing websites.</p>
           </div>
 
@@ -152,28 +153,19 @@ import { Component } from '@angular/core';
           </div>
         </div>
       </section>
-      <aside class="resume-actions center-text">
+      <aside class="tablet-desktop resume-actions center-text">
         <p><a href="documents/SheldonSResume.pdf" target="_blank">PDF Version</a></p>
       </aside>
     </div>
   `,
   styles: `
+    .grid {
+      grid-auto-flow: row;
+    }
+
     h1 {
       font-family: "Crimson Text", Georgia, serif;
       font-size: 2.5rem;
-    }
-
-    .grid {
-      grid-row-gap: 25px;
-    }
-
-    .page-grid-container {
-      display: grid;
-      column-gap: 20px;
-    }
-
-    .resume-section {
-      grid-column: 1 / 4;
     }
 
     .resume-header {
@@ -188,29 +180,63 @@ import { Component } from '@angular/core';
       border-top: solid 1px #a9a9a9;
     }
 
-    .resume-section-header h3 {
-      margin-top: 4px;
-    }
-
-    .experience {
-      padding-bottom: 15px;
+    .experience-title h4:first-child{
+      text-decoration: underline;
     }
 
     .experience ul {
-      padding-top: 8px;
+      padding-top: 0px;
       padding-left: 20px;
-    }
-
-    .experience-title h4 {
-      margin: 0px;
-    }
-
-    .resume-actions {
-      grid-column: 4;
     }
 
     .center-text {
       text-align: center;
+    }
+
+    /* Media query for tablet viewport */
+    @media screen and (min-width: 630px) {
+      .grid {
+        grid-auto-flow: none;
+        grid-row-gap: 25px;
+      }
+
+      .page-grid-container {
+        display: grid;
+        column-gap: 20px;
+      }
+
+      .resume-section {
+        grid-column: 1 / 4;
+      }
+
+      .resume-section-header h3 {
+        margin-top: 4px;
+      }
+
+      .experience {
+        padding-bottom: 15px;
+      }
+
+      .experience-title h4:first-child{
+        text-decoration: none;
+      }
+
+      .experience ul {
+        padding-top: 8px;
+        padding-left: 20px;
+      }
+
+      .experience-title h4 {
+        margin: 0px;
+      }
+
+      div .experience:first-child {
+        margin-top: 15px;
+      }
+
+      .resume-actions {
+        grid-column: 4;
+      }
     }
   `
 })

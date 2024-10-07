@@ -172,10 +172,6 @@ import { Component } from '@angular/core';
       border-bottom: solid 1px #808080;
     }
 
-    .resume-header h1, .resume-header h2 {
-      margin: 0px;
-    }
-
     .resume-section-header {
       border-top: solid 1px #a9a9a9;
     }

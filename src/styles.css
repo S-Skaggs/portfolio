@@ -18,7 +18,7 @@
     dark turquoise:     #00ced1v(ie Banner text)
     normal text should be black on the page background
 */
-body, header, nav, main, section, footer, img, figure, figcaption, div, ol, ul {
+body, header, nav, main, section, footer, img, figure, figcaption, div, ol, ul, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -102,9 +102,8 @@ img {
 }
 
 .navbar ul {
-  padding: 8px;
+  padding-right: 8px;
   list-style-type: none;
-  padding: 0;
   margin: 0;
 }
 

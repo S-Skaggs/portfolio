@@ -111,7 +111,7 @@ import { Component } from '@angular/core';
 
     .internal-project {
       border: solid 1px #0271eb;
-      box-shadow: 5px 5px #0257b2;
+      box-shadow: none;
     }
 
     .internal-project h2 {
@@ -120,7 +120,7 @@ import { Component } from '@angular/core';
 
     .unaffiliated-project {
       border: solid 1px #40e0d0;
-      box-shadow: 5px 5px #00ced1;
+      box-shadow: none;
     }
 
     .unaffiliated-project h2 {
@@ -128,12 +128,12 @@ import { Component } from '@angular/core';
     }
 
     .bellevue-project {
-      border: solid 1px #ba55d3;
-      box-shadow: 5px 5px #9932cc;
+      border: solid 1px #8601af;
+      box-shadow: none;
     }
 
     .bellevue-project h2 {
-      border-bottom: solid 1px #ba55d3;
+      border-bottom: solid 1px #8601af;
     }
 
     /* Media query for tablet viewport */
@@ -141,6 +141,21 @@ import { Component } from '@angular/core';
       .project-display {
         flex-direction: column;
         flex: 0 1 calc(33.333% - 20px);
+      }
+    }
+
+    /* Media query for laptop viewport */
+    @media screen and (min-width: 1024px) {
+      .internal-project {
+        box-shadow: 5px 5px #0257b2;
+      }
+
+      .unaffiliated-project {
+        box-shadow: 5px 5px #00ced1;
+      }
+
+      .bellevue-project {
+        box-shadow: 5px 5px #4b0082;
       }
     }
   `

@@ -64,6 +64,58 @@ import { Component } from '@angular/core';
           <li>CSS</li>
         </ul>
       </article>
+
+      <article class="project-display bellevue-project">
+        <h2>Place Holder for Rescue</h2>
+        <ul class="link-list">
+          <li><a href="https://github.com/S-Skaggs/rescue" target="_blank">GitHub Repository</a></li>
+        </ul>
+        <p></p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </article>
+
+      <article class="project-display bellevue-project">
+        <h2>Place Holder for ForwardFitness</h2>
+        <ul class="link-list">
+          <li><a href="https://github.com/S-Skaggs/ForwardFitness" target="_blank">GitHub Repository</a></li>
+        </ul>
+        <p></p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </article>
+
+      <article class="project-display bellevue-project">
+        <h2>Place Holder for Cookbook</h2>
+        <ul class="link-list">
+          <li><a href="https://github.com/S-Skaggs/cookbook" target="_blank">GitHub Repository</a></li>
+        </ul>
+        <p></p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </article>
+
+      <article class="project-display bellevue-project">
+        <h2>Place Holder for in-n-out-books</h2>
+        <ul class="link-list">
+          <li><a href="https://github.com/S-Skaggs/in-n-out-books" target="_blank">GitHub Repository</a></li>
+        </ul>
+        <p></p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </article>
     </div>
   `,
   styles: `

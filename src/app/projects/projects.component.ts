@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
     <p>While I can not give too many details about the internally facing projects, I will do my best to give you an idea of the technology used. Naturally I do not have any links that I can use for these internally facing projects.</p>
 
     <div class="flex-container">
-      <article class="project-display internal-project">
+      <article class="project-display flex-item internal-project">
         <h2>Unified Case Management</h2>
         <p>This is my team's primary focus, and it is internally facing. It is a powerful ticketing and workflow tool that can integrate with other software's APIs. I have been on this project since November 2014, I am not one of the original developers.</p>
         <p>One thing I really like about this project is it's use of generics. While challenging to learn at first, I quickly learned the power of using generics.</p>
@@ -25,7 +25,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display internal-project">
+      <article class="project-display flex-item internal-project">
         <h2>LifeLine</h2>
         <p>This is an internally facing project. All telephony providers are required by the US government to have the ability to provide highly discounted service to qualifying applicants. I was given this project in 2015 with the goal of pushing files to and pulling files from the LifeLine Authority. I would then take the files that were retrieved and process them to start work flows for other teams to handle.</p>
         <p>This turned out to be a solution of several console applications. As time has gone by I have been able to leverage third party tools to replace some of the less complex console applications.</p>
@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display unaffiliated-project">
+      <article class="project-display flex-item unaffiliated-project">
         <h2>Empty-File-Creator</h2>
         <ul class="link-list">
           <li><a href="https://github.com/S-Skaggs/Empty-File-Creator" target="_blank">GitHub Repository</a></li>
@@ -50,7 +50,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display bellevue-project">
+      <article class="project-display flex-item bellevue-project">
         <h2>ForwardFitness</h2>
         <ul class="link-list">
           <li><a href="https://github.com/S-Skaggs/ForwardFitness" target="_blank">GitHub Repository</a></li>
@@ -64,7 +64,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display bellevue-project">
+      <article class="project-display flex-item bellevue-project">
         <h2>Rescue</h2>
         <ul class="link-list">
           <li><a href="https://github.com/S-Skaggs/rescue" target="_blank">GitHub Repository</a></li>
@@ -78,7 +78,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display bellevue-project">
+      <article class="project-display flex-item bellevue-project">
         <h2>Biosite</h2>
         <ul class="link-list">
           <li><a href="https://github.com/S-Skaggs/biosite" target="_blank">GitHub Repository</a></li>
@@ -93,7 +93,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display bellevue-project">
+      <article class="project-display flex-item bellevue-project">
         <h2>Cookbook</h2>
         <ul class="link-list">
           <li><a href="https://github.com/S-Skaggs/cookbook" target="_blank">GitHub Repository</a></li>
@@ -111,7 +111,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display bellevue-project">
+      <article class="project-display flex-item bellevue-project">
         <h2>in-n-out-books</h2>
         <ul class="link-list">
           <li><a href="https://github.com/S-Skaggs/in-n-out-books" target="_blank">GitHub Repository</a></li>
@@ -128,7 +128,7 @@ import { Component } from '@angular/core';
         </ul>
       </article>
 
-      <article class="project-display bellevue-project">
+      <article class="project-display flex-item bellevue-project">
         <h2>Class Repositories</h2>
         <p>If you browse around my GitHub you will find other repositories. Most of these are named web-### where ### corresponds to the three digit number of the class.</p>
         <p>These were repositories I used while obtaining my degree in addition to the other class related ones that I have already mentioned. They are a collection of projects from following along with the textbook or completing assignments.</p>
@@ -148,12 +148,6 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: `
-    .project-display {
-      padding: 0 5px 5px;
-      text-align: left;
-      flex-direction: row;
-    }
-
     .project-display h2 {
       text-align: center;
     }
@@ -205,14 +199,6 @@ import { Component } from '@angular/core';
 
     .bellevue-project h2 {
       border-bottom: solid 1px #8601af;
-    }
-
-    /* Media query for tablet viewport */
-    @media screen and (min-width: 630px) {
-      .project-display {
-        flex-direction: column;
-        flex: 0 1 calc(33.333% - 20px);
-      }
     }
 
     /* Media query for laptop viewport */

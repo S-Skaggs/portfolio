@@ -150,6 +150,12 @@ ul {
   gap: 20px;
 }
 
+.flex-item {
+  padding: 0 5px 5px;
+  text-align: left;
+  flex-direction: row;
+}
+
 /* Footer styles */
 .footer {
   background-color: #6e1f49;
@@ -238,5 +244,13 @@ ul {
   .grid {
     grid-template-columns: auto auto;
     grid-gap: 20px;
+  }
+}
+
+/* Media query for large tablet viewport */
+@media screen and (min-width: 1024px) {
+  .flex-item {
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 20px);
   }
 }

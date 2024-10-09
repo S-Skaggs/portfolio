@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 
     <p>While I can not give too many details about the internally facing projects, I will do my best to give you an idea of the technology used. Naturally I do not have any links that I can use for these internally facing projects.</p>
 
-    <div class="projects-container">
+    <div class="flex-container">
       <article class="project-display internal-project">
         <h2>Unified Case Management</h2>
         <p>This is my team's primary focus, and it is internally facing. It is a powerful ticketing and workflow tool that can integrate with other software's APIs. I have been on this project since November 2014, I am not one of the original developers.</p>
@@ -148,19 +148,10 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: `
-    .projects-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
     .project-display {
       padding: 0 5px 5px;
       text-align: left;
       flex-direction: row;
-      box-sizing: border-box;
     }
 
     .project-display h2 {
@@ -169,7 +160,6 @@ import { Component } from '@angular/core';
 
     .project-display ul {
       list-style-type: none;
-      padding-left: 5px;
       margin: 0;
     }
 

@@ -133,9 +133,21 @@ p.dropCap:first-letter {
   font-size: 1.5rem;
 }
 
+ul {
+  margin-left: 2rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* Footer styles */

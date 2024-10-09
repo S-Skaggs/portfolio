@@ -182,7 +182,6 @@ import { Component } from '@angular/core';
 
     .experience ul {
       padding-top: 0px;
-      padding-left: 20px;
     }
 
     .center-text {
@@ -219,7 +218,6 @@ import { Component } from '@angular/core';
 
       .experience ul {
         padding-top: 8px;
-        padding-left: 20px;
       }
 
       .experience-title h4 {

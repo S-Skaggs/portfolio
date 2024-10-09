@@ -18,9 +18,6 @@ import { Component } from '@angular/core';
       together on a project.</p>
   `,
   styles: `
-    ul {
-      padding-left: 20px;
-    }
   `
 })
 export class AboutComponent {

@@ -46,7 +46,6 @@ import { Component } from '@angular/core';
         <img src="pictures/sheldon/photographing-you.jpeg" alt="Sheldon taking a picture of you" />
         <p>Let me say up front, I am no expert at photography. It is something I really enjoy, it literally gives me a different perspective on the world around me.</p>
         <p>It does not matter if it is with my Canon Rebel or with my phone, if I see something that speaks to me, I am going to shoot it.</p>
-        <img src="pictures/wildlife/Pensacola-GreatBlueHeron-2024.jpg" alt="a picture of a great blue heron" />
       </article>
 
       <article class="flex-item">
@@ -168,8 +167,9 @@ export class PersonalComponent {
       { src: 'pictures/wildlife/HummingbirdMoth-2011.jpg', alt: 'a picture of a hummingbird moth', caption: 'A hummingbird moth, captured with my old Canon Rebel' },
       { src: 'pictures/wildlife/Pensacola-BaldEagle-2024.jpg', alt: 'a picture of a bald eagle', caption: 'A bald eagle, captured with my Canon Rebel' },
       { src: 'pictures/wildlife/Pensacola-Pelican-2022.jpg', alt: 'a picture of a pelican in flight', caption: 'A pelican in flight, captured with my Canon Rebel' },
-      { src: 'pictures/wildlife/Pensacola-Pelican-2024.jpg', alt: 'a picture of a pelican on a pier', caption: 'A pelican on a pier, captured with my Canon Rebel' },
+      { src: 'pictures/wildlife/Pensacola-Pelican-2024.jpg', alt: 'a picture of a pelican on a pier', caption: 'A pelican on a pier taken by my son using my Canon Rebel' },
       { src: 'pictures/wildlife/Pensacola-SeaGull-2022.jpg', alt: 'a picture of a seagull in flight', caption: 'A seagull in flight, captured with my Canon Rebel' },
+      { src: 'pictures/wildlife/Pensacola-GreatBlueHeron-2024.jpg',  alt: 'a picture of a great blue heron', caption: 'A great blue heron taken by my son using my Canon Rebel' },
       { src: 'pictures/hiking/Cherokee-Turnpike.jpg', alt: 'a picture of a valley covered in clouds', caption: 'Looking down into a cloud covered valley from the Cherokee Turnpike, captured with my Canon Rebel' },
       { src: 'pictures/hiking/CherohalaSkyway-2022.jpg', alt: 'a picture of mountains in the fall', caption: 'Fall on the Cherohala Skyway, captured with my Canon Rebel' },
       { src: 'pictures/hiking/FallSnow-TN-2023.jpg', alt: 'a snow in the fall in Tennessee', caption: 'One Fall heading to Gatlinburg, TN, we ran into some snow, captured with my Canon Rebel' },

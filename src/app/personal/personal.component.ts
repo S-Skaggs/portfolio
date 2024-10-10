@@ -1,3 +1,9 @@
+export interface Photograph {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -79,6 +85,18 @@ import { Component } from '@angular/core';
         <p>Another perk about blogging, it allows me to repurpose some of my photographs. While they are currently not displayed in sheldoncodes as part of the listing, you can see them when you view a post or if you use sheldons.</p>
       </article>
     </div>
+
+    <br />
+
+    <h1>Some of My Photographs</h1>
+    <div>
+      @for(photograph of this.photographs; track photograph) {
+        <figure>
+          <img src="{{ photograph.src }}" alt="{{ photograph.alt }}" />
+          <figcaption>{{ photograph.caption }}</figcaption>
+        </figure>
+      }
+    </div>
   `,
   styles: `
     *:has(+ img) {
@@ -103,12 +121,35 @@ import { Component } from '@angular/core';
       margin-right: auto;
     }
 
+    figure {
+      position: relative;
+      margin: .3rem auto;
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(102, 102, 255, 0.5);
+      color: #fff;
+      width: 100%;
+      padding: .2rem;
+      text-align: center;
+      font-family: "DM Mono", monospace;
+      font-size: .9em;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
     .flex-container {
       margin-top: 1rem;
     }
 
     /* Media query for large tablet viewport */
     @media screen and (min-width: 1024px) {
+      figcaption {
+        padding: .5rem;
+      }
+
       .lower-image {
         margin: 0;
         margin-top: 1.5rem;
@@ -117,5 +158,26 @@ import { Component } from '@angular/core';
   `
 })
 export class PersonalComponent {
+  photographs: Photograph[] = [];
 
+  constructor() {
+    this.photographs = [
+      { src: 'pictures/moon/MoonCarolinaBeach_05202024.jpg', alt: 'a picture of the moon', caption: 'The moon, captured with my phone' },
+      { src: 'pictures/moon/Blood-Wolf-Moon-2019.jpg', alt: 'a picture of the 2019 blood wolf moon', caption: 'The 2019 blood wolf moon, captured with my Canon Rebel' },
+      { src: 'pictures/wildlife/AtlanticBeach-Dolphin-2023.jpg', alt: 'a picture of dolphin', caption: 'A dolphin, captured with my Canon Rebel' },
+      { src: 'pictures/wildlife/HummingbirdMoth-2011.jpg', alt: 'a picture of a hummingbird moth', caption: 'A hummingbird moth, captured with my old Canon Rebel' },
+      { src: 'pictures/wildlife/Pensacola-BaldEagle-2024.jpg', alt: 'a picture of a bald eagle', caption: 'A bald eagle, captured with my Canon Rebel' },
+      { src: 'pictures/wildlife/Pensacola-Pelican-2022.jpg', alt: 'a picture of a pelican in flight', caption: 'A pelican in flight, captured with my Canon Rebel' },
+      { src: 'pictures/wildlife/Pensacola-Pelican-2024.jpg', alt: 'a picture of a pelican on a pier', caption: 'A pelican on a pier, captured with my Canon Rebel' },
+      { src: 'pictures/wildlife/Pensacola-SeaGull-2022.jpg', alt: 'a picture of a seagull in flight', caption: 'A seagull in flight, captured with my Canon Rebel' },
+      { src: 'pictures/hiking/Cherokee-Turnpike.jpg', alt: 'a picture of a valley covered in clouds', caption: 'Looking down into a cloud covered valley from the Cherokee Turnpike, captured with my Canon Rebel' },
+      { src: 'pictures/hiking/CherohalaSkyway-2022.jpg', alt: 'a picture of mountains in the fall', caption: 'Fall on the Cherohala Skyway, captured with my Canon Rebel' },
+      { src: 'pictures/hiking/FallSnow-TN-2023.jpg', alt: 'a snow in the fall in Tennessee', caption: 'One Fall heading to Gatlinburg, TN, we ran into some snow, captured with my Canon Rebel' },
+      { src: 'pictures/beaches/BlueAngels_Practice-2022.jpg', alt: 'the blue angels in diamond formation', caption: 'The Blue Angels practicing, captured with my Canon Rebel' },
+      { src: 'pictures/beaches/BlueAngels_09112022.jpg', alt: 'the blue angels flying over a beach', caption: 'The Blue Angels returning to Pensacola, captured with my phone' },
+      { src: 'pictures/beaches/CarolinaBeach-09132020.jpg', alt: 'a beach at dusk', caption: 'Carolina Beach at dusk, captured with my phone' },
+      { src: 'pictures/beaches/Pensacola_08062022.jpg', alt: 'sunrise over a beach', caption: 'Sunrise over Pensacola, captured with my phone' },
+      { src: 'pictures/beaches/Pensacola_09152022.jpg', alt: 'sunset behind th remains of a pier', caption: 'Sunset behind the remains of a pier in Pensacola, captured with my phone' },
+    ];
+  }
 }

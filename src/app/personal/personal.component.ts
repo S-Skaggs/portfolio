@@ -123,7 +123,7 @@ import { Component } from '@angular/core';
 
     figure {
       position: relative;
-      margin: .3rem auto;
+      margin: .3rem auto 1.2rem auto;
     }
 
     figcaption {

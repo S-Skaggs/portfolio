@@ -88,7 +88,7 @@ import { Component } from '@angular/core';
     <br />
 
     <h1>Some of My Photographs</h1>
-    <div>
+    <div class="gallery-container">
       @for(photograph of this.photographs; track photograph) {
         <figure>
           <img src="{{ photograph.src }}" alt="{{ photograph.alt }}" />
@@ -143,6 +143,11 @@ import { Component } from '@angular/core';
       margin-top: 1rem;
     }
 
+    .gallery-container {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+
     /* Media query for large tablet viewport */
     @media screen and (min-width: 1024px) {
       figcaption {
@@ -153,6 +158,24 @@ import { Component } from '@angular/core';
         margin: 0;
         margin-top: 1.5rem;
       }
+
+      .gallery-container {
+        max-width: 800px;
+      }
+    }
+
+    /* Media query for large laptop viewport */
+    @media screen and (min-width: 1440px) {
+      .gallery-container {
+        max-width: 1000px;
+      }
+    }
+
+    /* Media query for 4k viewport */
+    @media screen and (min-width: 2500px) {
+      .gallery-container {
+        max-width: 100%;
+      }
     }
   `
 })
@@ -161,7 +184,7 @@ export class PersonalComponent {
 
   constructor() {
     this.photographs = [
-      { src: 'pictures/moon/MoonCarolinaBeach_05202024.jpg', alt: 'a picture of the moon', caption: 'The moon, captured with my phone' },
+      { src: 'pictures/moon/MoonCarolinaBeach_05202024-sm.jpg', alt: 'a picture of the moon', caption: 'The moon, captured with my phone' },
       { src: 'pictures/moon/Blood-Wolf-Moon-2019.jpg', alt: 'a picture of the 2019 blood wolf moon', caption: 'The 2019 blood wolf moon, captured with my Canon Rebel' },
       { src: 'pictures/wildlife/AtlanticBeach-Dolphin-2023.jpg', alt: 'a picture of dolphin', caption: 'A dolphin, captured with my Canon Rebel' },
       { src: 'pictures/wildlife/HummingbirdMoth-2011.jpg', alt: 'a picture of a hummingbird moth', caption: 'A hummingbird moth, captured with my old Canon Rebel' },

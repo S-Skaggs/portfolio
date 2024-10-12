@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
 
     <div class="grid">
       <section class="mobile">
-        <img class="center-image" src="pictures/sheldon/HelenGA_sm.jpg" alt="a picture of sheldon in a German restaurant" />
+        <img src="pictures/sheldon/HelenGA_sm.jpg" alt="a picture of sheldon in a German restaurant" />
       </section>
       <section>
         <p class="dropCap">I created this page to share some information about myself beyond my resume.</p>

@@ -156,6 +156,11 @@ ul {
   flex-direction: row;
 }
 
+.center-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Footer styles */
 .footer {
   background-color: #6e1f49;

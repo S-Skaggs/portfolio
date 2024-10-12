@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 
     <div class="grid">
       <section class="mobile">
-        <img src="pictures/sheldon/head.jpg" alt="a picture of sheldon from the neck up" />
+        <img class="center-image" src="pictures/sheldon/head.jpg" alt="a picture of sheldon from the neck up" />
       </section>
       <section>
         <p class="dropCap">Thank you for finding your way to my portfolio. I am a software engineer with a passion for creating web applications.

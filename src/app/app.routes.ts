@@ -10,34 +10,42 @@ import { ResumeComponent } from './resume/resume.component';
 export const routes: Routes = [
   {
     path: '',
+    title: 'Sheldon \' Portfolio',
     component: HomeComponent
   },
   {
     path: 'home',
+    title: 'Sheldon \' Portfolio',
     component: HomeComponent
   },
   {
     path: 'about',
+    title: 'Sheldon \' Portfolio',
     component: AboutComponent
   },
   {
     path: 'military',
+    title: 'Military',
     component: MilitaryComponent
   },
   {
     path: 'personal',
+    title: 'Personal',
     component: PersonalComponent
   },
   {
     path: 'projects',
+    title: 'Projects',
     component: ProjectsComponent
   },
   {
     path: 'resume',
+    title: 'Resume',
     component: ResumeComponent
   },
   {
     path: '**',
+    title: '404',
     component: NotFoundComponent
   }
 ];

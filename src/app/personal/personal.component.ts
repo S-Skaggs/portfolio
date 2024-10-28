@@ -109,6 +109,8 @@ import { Component } from '@angular/core';
     article {
       border: solid 1px #05e0e9;
       padding: 0 .5rem;
+      height: 40rem;
+      overflow-y: auto;
     }
 
     article h2 {

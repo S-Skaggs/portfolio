@@ -148,6 +148,11 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: `
+    article {
+      height: 25rem;
+      overflow-y: auto;
+    }
+
     .project-display h2 {
       text-align: center;
     }

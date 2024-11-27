@@ -38,7 +38,7 @@ import { Component } from '@angular/core';
         <h2>Reading</h2>
         <p>When I first developed an affinity to reading, I preferred the science fiction and fantasy genres. As I grew older my tastes expanded into mystery and history. As a developer I also try to be a life long learner, so I have to add technical books into the mix.</p>
         <p>A neat resource I found, that integrates with my Kindle account, is called <a href="https://www.goodreads.com/" target="_blank">goodreads</a>. It is like a social network for book readers. You can leave reviews, share quotes, and progress of the books you are reading. You can indicate books you would like to read, and of course books you have read. They even have giveaways from time to time. Like any social network it does require some maintenance, which I have been neglecting lately.</p>
-        <p>If you would like to connect on that site, you can find my profile with <a href="https://www.goodreads.com/user/show/10868272-sheldon" target="_blank">this link</a>.</p>
+        <p>If you would like to connect on that site, you can find my profile with <a href="https://www.goodreads.com/user/show/10868272-sheldon" target="_blank">this link</a>, I will look forward to learning what you like to read and any reviews you share.</p>
       </article>
 
       <article class="flex-item">

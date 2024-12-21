@@ -189,7 +189,7 @@ export class PersonalComponent {
       { src: 'pictures/moon/MoonCarolinaBeach_05202024-sm.jpg', alt: 'a picture of the moon', caption: 'The moon, captured with my phone' },
       { src: 'pictures/moon/Blood-Wolf-Moon-2019.jpg', alt: 'a picture of the 2019 blood wolf moon', caption: 'The 2019 blood wolf moon, captured with my Canon Rebel' },
       { src: 'pictures/wildlife/AtlanticBeach-Dolphin-2023.JPG', alt: 'a picture of dolphin', caption: 'A dolphin, captured with my Canon Rebel' },
-      { src: 'pictures/wildlife/HummingbirdMoth-2011.JPG', alt: 'a picture of a hummingbird moth', caption: 'A hummingbird moth, captured with my old Canon Rebel' },
+      { src: 'pictures/wildlife/HummingBirdMoth-2011.JPG', alt: 'a picture of a hummingbird moth', caption: 'A hummingbird moth, captured with my old Canon Rebel' },
       { src: 'pictures/wildlife/Pensacola-BaldEagle-2024.JPG', alt: 'a picture of a bald eagle', caption: 'A bald eagle, captured with my Canon Rebel' },
       { src: 'pictures/wildlife/Pensacola-Pelican-2022.JPG', alt: 'a picture of a pelican in flight', caption: 'A pelican in flight, captured with my Canon Rebel' },
       { src: 'pictures/wildlife/Pensacola-Pelican-2024.JPG', alt: 'a picture of a pelican on a pier', caption: 'A pelican on a pier taken by my son using my Canon Rebel' },

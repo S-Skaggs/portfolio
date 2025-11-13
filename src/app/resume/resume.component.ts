@@ -153,7 +153,6 @@ import { Component } from '@angular/core';
         </div>
       </section>
       <aside class="tablet-desktop resume-actions center-text">
-        <p><a href="documents/SheldonSResume.pdf" target="_blank">PDF Version</a></p>
       </aside>
     </div>
   `,

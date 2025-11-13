@@ -10,7 +10,6 @@ import { Component } from '@angular/core';
         <div class="resume-header center-text">
           <h1>Sheldon Skaggs</h1>
           <h2>Software Engineer IV</h2>
-          <a class="mobile" href="documents/SheldonSResume.pdf" target="_blank">PDF Version</a>
         </div>
         <br />
         <div class="grid">
